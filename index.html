@@ -1,1 +1,59 @@
-test
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script language="JavaScript">
+    <!-- Begin
+        var answers = new Array(
+            "Bien sur",
+            "Evidemment",
+            "Yes!",
+            "Of course",
+            "Absolutely",
+            "Si!",
+            "Ovviamente",
+            "Definitivamente"
+        );
+        function fortune() {
+            num = Math.round( (answers.length - 1) * Math.random());
+            return answers[num];
+        }
+    //  End -->
+    </script>
+
+    <form>
+        <br>
+        <h3 class="text-center text-primary">Dois-je annuler tous mes plans ce soir et passer la soiree avec Jerome ?</h3>
+        <br>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-lg btn-primary text-center" onClick="console.log($('#answer')); $('#answer').text(fortune());">Ask</button>
+        </div>
+
+        <br>
+        <h3 class="text-center text-primary" id="answer"></h3>
+        <br>
+    </form>
+
+</body>
+</html>
